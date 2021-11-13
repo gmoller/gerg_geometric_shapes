@@ -15,8 +15,8 @@ pub trait Vec2Extensions {
     fn project(&self, onto: Vec2) -> Vec2;
 }
 impl Vec2Extensions for Vec2 {
-    fn rotate_vector(&self, degrees: f32) -> Vec2 {
-        let radians = degrees.to_radians();
+    fn rotate_vector(&self, angle_in_degrees: f32) -> Vec2 {
+        let radians = angle_in_degrees.to_radians();
         let sin = radians.sin();
         let cos = radians.cos();
 
