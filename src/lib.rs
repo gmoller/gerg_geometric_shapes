@@ -9,7 +9,7 @@ pub mod range;
 pub mod rectangle;
 
 pub trait Vec2Extensions {
-    fn rotate_vector(&self, degrees: f32) -> Vec2;
+    fn rotate_vector(&self, angle_in_degrees: f32) -> Vec2;
     fn rotate_vector_90(&self) -> Vec2;
     fn is_parallel(&self, b: Vec2) -> bool;
     fn project(&self, onto: Vec2) -> Vec2;
